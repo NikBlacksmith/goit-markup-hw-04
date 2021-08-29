@@ -49,6 +49,9 @@ ul {
   line-height: 1.16;
   color: var(--main-title-color);
 }
+.header-logo-icon:hover {
+  color: var(--accent-color);
+}
 .header .container {
   display: flex;
   align-items: center;
@@ -61,12 +64,15 @@ ul {
 }
 .logo-icon {
   fill: currentColor;
-  margin-right: 10px;
 }
 .logo-icon:hover,
 .logo-icon:focus {
   background-color: #2196f3;
   fill: white;
+}
+
+.header-logo-icon {
+  margin-right: 10px;
 }
 
 .header-item:not(:last-child) {
@@ -259,17 +265,18 @@ ul {
   border-radius: 50%;
   background-color: transparent;
 }
-.tml:focus,
+.tlm:focus,
 .tlm:hover {
   background-color: #2196f3;
 }
-.tml:focus .logo-icon,
+.tlm:focus .logo-icon,
 .tlm:hover .logo-icon {
   fill: white;
 }
 .tlm:not(:last-child) {
   margin-right: 10px;
 }
+
 .team-list {
   display: flex;
 }
@@ -405,7 +412,10 @@ ul {
   justify-content: center;
   margin-bottom: 50px;
 }
-.filter-item {
+.btn:hover,
+.btn:focus {
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
@@ -425,6 +435,10 @@ ul {
 }
 .case-item {
   cursor: pointer;
+}
+.case-item:hover {
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
 }
 .case-border {
   border: 1px solid #eeeeee;
