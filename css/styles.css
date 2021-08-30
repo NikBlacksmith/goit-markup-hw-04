@@ -49,8 +49,17 @@ ul {
   line-height: 1.16;
   color: var(--main-title-color);
 }
-.header-logo-icon:hover {
-  color: var(--accent-color);
+.header-link:focus,
+.header-link:hover {
+  background-color: #2196f3;
+}
+.header-logo-icon:hover,
+.header-logo-icon:focus {
+  fill: #03a9f4;
+}
+.cont-mail:hover,
+.cont-mail:focus {
+  fill: #03a9f4;
 }
 .header .container {
   display: flex;
@@ -119,7 +128,8 @@ ul {
 }
 
 .cont-mail {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
   font-size: 14px;
@@ -240,17 +250,16 @@ ul {
 .cases-item:not(:last-child) {
   margin-right: 30px;
 }
-
 .team {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .team-icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 30px;
 }
 .team-info {
   background-color: white;
@@ -263,18 +272,25 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: transparent;
 }
 .tlm:focus,
 .tlm:hover {
   background-color: #2196f3;
 }
-.tlm:focus .logo-icon,
-.tlm:hover .logo-icon {
+.team-logo-icon {
+  fill: #afb1b8;
+}
+
+.link-team-logo-icon:focus .team-logo-icon,
+.link-team-logo-icon:hover .team-logo-icon {
   fill: white;
+  background-color: #2196f3;
 }
 .tlm:not(:last-child) {
   margin-right: 10px;
+}
+.logo-icon {
+  fill: currentColor;
 }
 
 .team-list {
@@ -327,12 +343,21 @@ ul {
   background-color: #2196f3;
   fill: white;
 }
+.clients-logo-icon:focus,
+.clients-logo-icon:hover {
+  background-color: #2196f3;
+  fill: white;
+}
+
+.clients-logo-icon {
+  fill: #afb1b8;
+}
 .position {
   font-size: 16px;
   line-height: 1.17;
   color: var(--main-text-color);
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   text-align: center;
 }
 .footer {
@@ -401,6 +426,9 @@ ul {
 .foot-soc-list:hover {
   background-color: #2196f3;
   fill: white;
+}
+.foot-logo-icon {
+  fill: #ffffff;
 }
 
 .filt-sect {
