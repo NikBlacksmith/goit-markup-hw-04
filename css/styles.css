@@ -276,17 +276,25 @@ ul {
 .tlm:focus,
 .tlm:hover {
   background-color: #2196f3;
+  fill: white;
+}
+.tlm:focus .team-logo-icon,
+.tlm:hover .team-logo-icon {
+  background-color: #2196f3;
+  fill: white;
 }
 .team-logo-icon {
   fill: #afb1b8;
 }
-
-.link-team-logo-icon:focus .team-logo-icon,
-.link-team-logo-icon:hover .team-logo-icon {
+.team-marg {
+  margin-right: 10px;
+}
+.tlm:focus .team-logo-icon,
+.tlm:hover .team-logo-icon {
   fill: white;
   background-color: #2196f3;
 }
-.tlm:not(:last-child) {
+.team-marg:not(:last-child) {
   margin-right: 10px;
 }
 .logo-icon {
@@ -335,18 +343,16 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.clients-item:not(:last-child) {
+.clients-marg:not(:last-child) {
   margin-right: 30px;
 }
-.clients-item:focus,
-.clients-item:hover {
-  background-color: #2196f3;
-  fill: white;
+
+.clients-item:focus .clients-logo-icon,
+.clients-item:hover .clients-logo-icon {
+  fill: #2196f3;
 }
-.clients-logo-icon:focus,
-.clients-logo-icon:hover {
-  background-color: #2196f3;
-  fill: white;
+.clients-item:hover {
+  border: 1px solid #03a9f4;
 }
 
 .clients-logo-icon {
@@ -410,6 +416,9 @@ ul {
   color: #ffffff;
   text-decoration: none;
 }
+.soc-marg {
+  margin-right: 10px;
+}
 .foot-soc-list {
   display: flex;
   justify-content: center;
@@ -419,7 +428,7 @@ ul {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.foot-soc-list:not(:last-child) {
+.soc-marg:not(:last-child) {
   margin-right: 10px;
 }
 .foot-soc-list:focus,
